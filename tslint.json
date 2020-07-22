@@ -1,0 +1,265 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-eslint-rules",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "printWidth": 120,
+        "trailingComma": "none",
+        "singleQuote": true,
+        "quoteProps": "as-needed",
+        "bracketSpacing": true,
+        "semi": true
+      }
+    ],
+    "align": {
+      "options": [
+        "parameters",
+        "statements"
+      ]
+    },
+    "array-type": false,
+    "arrow-return-shorthand": true,
+    "curly": [true, "ignore-same-line"],
+    "deprecation": {
+      "severity": "warning"
+    },
+    "component-class-suffix": [true, "Component", "Page"],
+    "contextual-lifecycle": true,
+    "directive-class-suffix": true,
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+    "eofline": true,
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "import-spacing": true,
+    "indent": {
+      "options": [
+        "spaces"
+      ]
+    },
+    "max-classes-per-file": false,
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "^import |^export {(.*?)}|class [a-zA-Z]+ implements |// "
+      }
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
+    ],
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-conditional-assignment": true,
+    "no-empty": [
+      true,
+      "allow-empty-catch",
+      "allow-empty-functions"
+    ],
+    "no-eval": true,
+    "no-duplicate-imports": true,
+    "no-duplicate-variable": true,
+    "no-var-keyword": true,
+    "no-consecutive-blank-lines": true,
+    "no-trailing-whitespace": [
+      true,
+      "ignore-comments",
+      "ignore-template-strings"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "space-within-parens": [true, 0],
+    "no-reference-import": true,
+    "no-return-await": true,
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks",
+      "allow-tagged-template"
+    ],
+    "radix": true,
+    "use-isnan": true,
+    "triple-equals": [true, "allow-null-check"],
+    "class-name": true,
+    "comment-format": [true, "check-space"],
+    "jsdoc-format": true,
+    "new-parens": true,
+    "one-line": [
+      true,
+      "check-catch",
+      "check-finally",
+      "check-else",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "unified-signatures": true,
+    "strict-type-predicates": true,
+    "one-variable-per-declaration": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-misused-new": true,
+    "no-string-throw": true,
+    "no-unnecessary-qualifier": true,
+    "no-unnecessary-type-assertion": true,
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": true,
+    "no-switch-case-fall-through": true,
+    "no-var-requires": false,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": {
+      "options": [
+        "always"
+      ]
+    },
+    "space-before-function-paren": {
+      "options": {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    },
+    "typedef": [
+      true,
+      "call-signature"
+    ],
+    "typedef-whitespace": {
+      "options": [
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    },
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-leading-underscore",
+        "allow-pascal-case"
+      ]
+    },
+    "whitespace": {
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-separator",
+        "check-type",
+        "check-typecast",
+        "check-type-operator",
+        "check-rest-spread"
+      ]
+    },
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-inputs-metadata-property": true,
+    "no-output-native": true,
+    "no-output-on-prefix": true,
+    "no-output-rename": true,
+    "no-outputs-metadata-property": true,
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "no-constant-condition": [
+      true,
+      {
+        "checkLoops": false
+      }
+    ],
+    "no-control-regex": true,
+    "no-duplicate-case": true,
+    "no-empty-character-class": true,
+    "no-ex-assign": true,
+    "no-extra-boolean-cast": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": [true, "functions"],
+    "no-invalid-regexp": true,
+    "ter-no-irregular-whitespace": true,
+    "no-regex-spaces": true,
+    "ter-no-sparse-arrays": true,
+    "ter-func-call-spacing": [true, "never"],
+    "no-unexpected-multiline": true,
+    "valid-typeof": true,
+    "ter-arrow-spacing": [
+      true,
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "no-multi-spaces": true,
+    "handle-callback-err": [true, "^(err|error)$"],
+    "block-spacing": [true, "always"],
+    "brace-style": [
+      true,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "object-curly-spacing": [true, "always"]
+  },
+  "rulesDirectory": [
+    "codelyzer"
+  ]
+}
